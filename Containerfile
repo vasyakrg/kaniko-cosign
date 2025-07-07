@@ -10,6 +10,6 @@ COPY --from=kaniko /kaniko /kaniko
 ENV PATH=$PATH:/usr/local/bin:/kaniko \
     DOCKER_CONFIG=/kaniko/.docker
 RUN apt-get update &&\
-    apt-get install -y ca-certificates curl
+    apt-get install -y ca-certificates curl jq
 WORKDIR /workspace
 CMD ["/bin/sh"]
