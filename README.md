@@ -1,1 +1,4 @@
 # kaniko-cosign
+
+ARG COSIGN_VERSION=v2.5.2
+ARG VAULT_VERSION=1.20
