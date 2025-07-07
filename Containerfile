@@ -1,5 +1,5 @@
-ARG COSIGN_VERSION=v2.2.3
-ARG VAULT_VERSION=1.14
+ARG COSIGN_VERSION=v2.5.2
+ARG VAULT_VERSION=1.20
 FROM gcr.io/projectsigstore/cosign:$COSIGN_VERSION AS cosign
 FROM hashicorp/vault:$VAULT_VERSION AS vault
 FROM gcr.io/kaniko-project/executor:debug AS kaniko
